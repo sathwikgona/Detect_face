@@ -3,17 +3,15 @@
     font-family: Arial, sans-serif;
 }
 
-/* ===== PAGE BACKGROUND (STATIC) ===== */
 body {
     margin: 0;
     min-height: 100vh;
-    background:  #6d7eff; /* STATIC COLOR (no animation) */
+    background:  #6d7eff; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* ===== LAYOUT ===== */
 .app {
     width: 100%;
     display: flex;
@@ -30,13 +28,11 @@ body {
     backdrop-filter: blur(12px);
 }
 
-/* ===== TEXT ===== */
 .tagline {
     opacity: 0.9;
     margin-bottom: 15px;
 }
 
-/* ===== MODE BUTTONS ===== */
 .Detection-buttons {
     display: flex;
     justify-content: center;
@@ -54,7 +50,6 @@ body {
     font-weight: 600;
 }
 
-/* ===== DROP BOX ===== */
 .drop-zone {
     border: 2px dashed rgba(255,255,255,0.6);
     padding: 25px;
@@ -62,12 +57,10 @@ body {
     cursor: pointer;
 }
 
-/* subtle hover ONLY (no color animation) */
 .drop-zone:hover {
     background: rgba(255,255,255,0.1);
 }
 
-/* ===== PREVIEW ===== */
 .preview {
     margin-top: 15px;
 }
@@ -77,7 +70,6 @@ body {
     border-radius: 12px;
 }
 
-/* ===== BUTTON ===== */
 button {
     margin-top: 15px;
     width: 100%;
@@ -90,7 +82,6 @@ button {
     color: #333;
 }
 
-/* ===== LOADER (ROTATION ONLY) ===== */
 .loader {
     margin-top: 15px;
 }
@@ -101,7 +92,7 @@ button {
     border: 5px solid rgba(255,255,255,0.4);
     border-top: 5px solid #ffffff;
     border-radius: 50%;
-    animation: spin 1s linear infinite; /* rotation only */
+    animation: spin 1s linear infinite; 
     margin: auto;
 }
 
@@ -113,7 +104,6 @@ button {
     display: none;
 }
 
-/* ===== RESULT BOX ===== */
 .result {
     margin-top: 15px;
     padding: 12px;
@@ -139,3 +129,4 @@ button {
 .result.uncertain {
     background: #f39c12;
 }
+
