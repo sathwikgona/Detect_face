@@ -25,10 +25,8 @@ async def detect_video_api(file: UploadFile = File(...)):
     with open(file_path, "wb") as f:
         f.write(await file.read())
 
-    # Run detection
     result = detect_video(file_path)
 
-    # Delete the temporary file
     if os.path.exists(file_path):
         os.remove(file_path)
 
@@ -38,4 +36,5 @@ async def detect_video_api(file: UploadFile = File(...)):
 @app.post("/detect/audio")
 async def detect_audio_api(file: UploadFile = File(...)):
     return {"result": detect_audio(file)}
+
 
